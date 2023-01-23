@@ -1,0 +1,17 @@
+@mixin flex-box($direction,$justify,$align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin grid-box($repeat,$col){
+    display: grid;
+    grid-template-columns: repeat($repeat,$col);
+}
+
+@mixin button($padding,$radius,$background){
+    padding: $padding;
+    border-radius: $radius;
+    background-color: $background;
+}
