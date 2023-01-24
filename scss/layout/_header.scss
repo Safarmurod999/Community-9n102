@@ -1,0 +1,51 @@
+@use "../abstract/variables" as var;
+
+.navbar {
+  background-color: var.$tint-blue !important;
+  padding: 16px 0 !important;
+}
+.navbar-expand-lg .navbar-nav {
+  align-items: center;
+}
+.navbar-toggler{
+    color: var.$secondary-color !important;
+    background-color: var.$secondary-color !important;
+    border-color: var.$secondary-color !important;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 0 16px !important;
+  color: var.$link-hover !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 28px !important;
+}
+
+.navbar-nav .nav-link.active {
+  color: var.$secondary-color !important;
+}
+.navbar-expand-lg .navbar-nav .nav-item:last-child .nav-link {
+  padding: 16px 48px !important;
+  color: var.$secondary-color !important;
+  border: 1px solid #f4f6fc33;
+  border-radius: 41px;
+  margin-left: 32px;
+}
+
+.offcanvas.show{
+    background-color: var.$tint-blue !important;
+    .navbar-nav{
+        .nav-item{
+            .nav-link{
+                // padding: 0 !important;
+                margin: 10px 0 !important;
+            }
+        }
+    }
+}
+
+.offcanvas-header .btn-close{
+    background-color: var.$secondary-color !important;
+    border-radius: 50%;
+    opacity: 1 !important;
+}
