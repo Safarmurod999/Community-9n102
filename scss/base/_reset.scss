@@ -25,7 +25,15 @@ button{
 ul{
     list-style-type: none;
 }
+main{
+    margin-top: 72px;
+}
 
+@media (min-width:992px){
+    main{
+        margin-top: 94px;
+    }
+}
 
 #backtop {
     border: none;

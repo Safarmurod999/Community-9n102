@@ -26,6 +26,15 @@ ul {
   list-style-type: none;
 }
 
+main {
+  margin-top: 72px;
+}
+
+@media (min-width: 992px) {
+  main {
+    margin-top: 94px;
+  }
+}
 #backtop {
   border: none;
   position: fixed;
@@ -58,6 +67,7 @@ ul {
 
 .navbar-expand-lg .navbar-nav {
   align-items: center;
+  padding-right: 0 !important;
 }
 
 .navbar-toggler {
@@ -98,6 +108,55 @@ ul {
   background-color: #fff !important;
   border-radius: 50%;
   opacity: 1 !important;
+}
+
+.home {
+  background-color: #1C1E53 !important;
+}
+.home__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 74px;
+  color: #fff !important;
+  margin-bottom: 24px;
+}
+.home__text {
+  max-width: 562px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #fff !important;
+  opacity: 0.7;
+  margin-bottom: 48px;
+}
+.home__btn__group {
+  max-width: 490px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto !important;
+}
+.home__btn {
+  padding: 16px 56px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  border-radius: 41px;
+  color: #fff !important;
+  transition: 0.5s;
+}
+.home__btn:hover {
+  color: #1b1c2b !important;
+  background-color: #FCD980;
+}
+
+@media (min-width: 992px) {
+  .home {
+    padding: 126px 0 !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
