@@ -1,0 +1,142 @@
+// Jumayev Bekzod
+@use "../style.scss";
+
+// Work
+
+#work {
+    padding: 128px 0 48px;
+    background-color: #e5e5e5;
+    .work {
+        .work__title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-bottom: 48px;
+            h1 {
+                max-width: 630px;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 64px;
+                color: #282938;
+            }
+        }
+        .work__cards {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 32px;
+            .work__card {
+                padding: 50px 32px 48px 30px;
+                background: #F4F6FC;
+                h3 {
+                    padding: 26px 0 12px 0;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 36px;
+                    color: #282938;
+                }
+                p {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: #282938;
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+
+// Social media
+
+#social-media {
+    padding-bottom: 128px;
+    background-color: #e5e5e5;
+    .social-media {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .social-media__title {
+            h2 {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 38px;
+                line-height: 56px;
+                color: #282938;
+            }
+            p {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                color: #282938;
+                opacity: 0.7;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1020px) {
+    .work {
+        .work__title {
+           h1 {
+            font-size: 32px !important;
+           }
+        }
+        .work__cards {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .social-media {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .social-media {
+        display: grid !important;
+        row-gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        .social-media__title {
+            h2 {
+                font-size: 26px !important;
+            }
+            p {
+                display: none !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .work {
+        .work__title {
+            h1 {
+                font-size: 24px !important;
+            }
+        }
+        .work__cards {
+            .work__card {
+                h3 {
+                    font-size: 20px !important;
+                }
+                p {
+                    font-size: 14px !important;
+                }
+            }
+        }
+    }
+    .social-media {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-left: 90px !important;
+    }
+}
