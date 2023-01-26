@@ -1,0 +1,174 @@
+#readcase {
+    .Design_case {
+      max-width: 1050px !important;
+      padding: 0 12px !important;
+      margin: 0 auto;
+  
+      .Design_case_title_sub {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        color: #282938;
+        opacity: 0.8;
+        padding-top: 120px;
+      }
+      .Design_case_title {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 64px;
+        color: #282938;
+        padding-top: 12px;
+        max-width: 646px;
+      }
+      img {
+        width: 100%;
+        padding-top: 48px;
+      }
+      ul {
+        padding-top: 50px;
+        padding-bottom: 20;
+        display: flex;
+        justify-content: space-between;
+  
+        a {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 1.2em;
+          line-height: 36px;
+          color: #282938;
+          &:hover {
+            color: #1c1e53;
+          }
+        }
+      }
+    }
+    .Design_about {
+      max-width: 826px !important;
+      padding: 0 12px !important;
+      margin: 0 auto;
+  
+      .Design_about_title {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 56px;
+        color: #282938;
+        padding-top: 80px;
+      }
+      .Design_about_text {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #282938;
+        opacity: 0.7;
+        max-width: 837px;
+      }
+      ul {
+        list-style: disc;
+        li {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 28px;
+          text-align: justify;
+          color: #282938;
+          opacity: 0.7;
+        }
+      }
+      img {
+        width: 100%;
+        padding-top: 60px;
+      }
+    }
+    .Design_howdo {
+      max-width: 826px !important;
+      padding: 0 12px !important;
+      margin: 0 auto;
+  
+      .Design_howdo_title {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 56px;
+        color: #282938;
+        padding-top: 80px;
+      }
+      .Design_howdo_text {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #282938;
+        opacity: 0.7;
+        max-width: 837px;
+      }
+      ul {
+        list-style: disc;
+        padding-bottom: 20px;
+        li {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 28px;
+          text-align: justify;
+          color: #282938;
+          opacity: 0.7;
+        }
+      }
+    }
+    .Design_button {
+      max-width: 826px !important;
+      padding: 0 12px !important;
+      margin: 0 auto;
+      h2 {
+        padding-top: 50px;
+        margin: auto;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 64px;
+        text-align: center;
+        color: #282938;
+        max-width: 844px;
+      }
+      p {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        color: #282938;
+        opacity: 0.7;
+        max-width: 624px;
+        margin: auto;
+        padding-top: 20px;
+      }
+      button {
+        font-family: "Manrope";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 32px;
+        color: #1b1c2b;
+        background: #fcd980;
+        border-radius: 41px;
+        padding: 16px 12%;
+        text-align: center;
+        margin: 5% 26%;
+      }
+    }
+  }
