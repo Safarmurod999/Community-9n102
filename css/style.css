@@ -110,6 +110,97 @@ main {
   opacity: 1 !important;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#footer {
+  background: #1C1E53;
+  color: white;
+}
+
+.footers {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 50px;
+  padding-top: 100px;
+}
+.footers .footers-lift {
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 20px;
+}
+.footers .footers-lift .fit h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 58px;
+  line-height: 64px;
+  color: #282938;
+  padding-bottom: 30px;
+}
+.footers .footers-lift .pargrp p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+.footers .img-left {
+  padding-top: 90px;
+}
+.footers .img-left img {
+  width: 100%;
+}
+
+.bottom {
+  padding: 30px 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+}
+.bottom h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #282938;
+}
+.bottom ul {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 20px;
+}
+.bottom ul li a {
+  color: black;
+}
+.bottom ul li a:hover {
+  text-decoration: underline;
+}
+
+.bottom-end {
+  padding: 30px 0;
+  height: 95px;
+}
+
+@media (max-width: 1380px) {
+  .bottom-end {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .footers {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 40px;
+  }
+}
 .home {
   background-color: #1C1E53 !important;
   padding: 50px 0 !important;
@@ -828,6 +919,7 @@ main {
     font-size: 26px !important;
   }
 }
+<<<<<<< HEAD
 .head {
   background-color: #fff;
   margin-top: 128px;
@@ -838,11 +930,31 @@ main {
 }
 
 .asked {
+=======
+#readcase .Design_case {
+  max-width: 1050px !important;
+  padding: 0 12px !important;
+  margin: 0 auto;
+}
+#readcase .Design_case .Design_case_title_sub {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #282938;
+  opacity: 0.8;
+  padding-top: 120px;
+}
+#readcase .Design_case .Design_case_title {
+  font-family: "Poppins";
+>>>>>>> 6ab5f534e5e9f9e87931a7cdaa3f781c9894400b
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
   line-height: 64px;
   color: #282938;
+<<<<<<< HEAD
 }
 
 .for {
@@ -1035,6 +1147,8 @@ main {
   font-size: 48px;
   line-height: 64px;
   color: #282938;
+=======
+>>>>>>> 6ab5f534e5e9f9e87931a7cdaa3f781c9894400b
   padding-top: 12px;
   max-width: 646px;
 }
