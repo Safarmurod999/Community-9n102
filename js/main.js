@@ -31,3 +31,41 @@ function includeHTML() {
   }
   
   includeHTML();
+
+  
+let backtop = document.getElementById("backtop");
+
+function toggleBacktop() {
+  if (
+    document.body.scrollTop > 200 ||
+    document.documentElement.scrollTop > 200
+  ) {
+    backtop.style.opacity = 1;
+  } else {
+    backtop.style.opacity = 0;
+  }
+}
+
+
+window.addEventListener("scroll", function () {
+  toggleBacktop();
+});
+
+window.addEventListener("scroll", function () {
+  shrink();
+});
+
+let navbar = document.getElementById("navbar");
+
+function shrink() {
+  if (
+    document.body.scrollTop > 150 ||
+    document.documentElement.scrollTop > 150
+  ) {
+    navbar.classList.add("navbar-shrink");
+    // navbar.style.padding = "60px 0 15px";
+  } else {
+    navbar.classList.remove("navbar-shrink");
+    // navbar.style.padding = "73px 0 20px";
+  }
+}

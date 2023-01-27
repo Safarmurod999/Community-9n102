@@ -63,6 +63,12 @@ main {
 .navbar {
   background-color: #1C1E53 !important;
   padding: 16px 0 !important;
+  transition: 0.5s;
+}
+
+.navbar-shrink {
+  padding: 10px 0 !important;
+  box-shadow: -2px 14px 8px 0px rgba(250, 247, 247, 0.2);
 }
 
 .navbar-expand-lg .navbar-nav {
