@@ -267,7 +267,6 @@ main {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 0 auto !important;
 }
 .home__btn {
   padding: 16px 56px;
@@ -635,6 +634,11 @@ main {
   color: #fff;
 }
 
+@media (max-width: 768px) {
+  .home__btn__group {
+    margin: 0 auto !important;
+  }
+}
 @media (min-widh: 768px) {
   .projects__right .overlay-right {
     width: 94.44%;

@@ -27,7 +27,6 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 0 auto !important;
     // gap: 20px;
   }
   &__btn {
@@ -413,6 +412,13 @@
     font-size: 16px;
     line-height: 28px;
     color: var.$secondary-color;
+  }
+}
+@media (max-width:768px) {
+  .home{
+    &__btn__group {
+      margin: 0 auto !important;
+    }
   }
 }
 @media (min-widh: 768px) {
