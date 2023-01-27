@@ -317,7 +317,7 @@ main {
 }
 @media (min-width: 992px) {
   .home,
-  .work {
+.work {
     padding: 126px 0 !important;
   }
 }
@@ -828,9 +828,9 @@ main {
     font-size: 26px !important;
   }
 }
-<<<<<<< HEAD
 .head {
   background-color: #fff;
+  margin-top: 128px;
 }
 
 .asked-head {
@@ -838,31 +838,11 @@ main {
 }
 
 .asked {
-=======
-#readcase .Design_case {
-  max-width: 1050px !important;
-  padding: 0 12px !important;
-  margin: 0 auto;
-}
-#readcase .Design_case .Design_case_title_sub {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 36px;
-  color: #282938;
-  opacity: 0.8;
-  padding-top: 120px;
-}
-#readcase .Design_case .Design_case_title {
-  font-family: "Poppins";
->>>>>>> 2aed413b79e2ef040e2c970fd6e05945e4b47580
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
   line-height: 64px;
   color: #282938;
-<<<<<<< HEAD
 }
 
 .for {
@@ -886,7 +866,175 @@ main {
   padding-right: 54px;
 }
 
-=======
+.main {
+  font-family: sans-serif;
+  background-color: white;
+}
+
+.container {
+  box-sizing: border-box;
+}
+
+.shef {
+  display: grid;
+  grid-template-columns: auto;
+  align-items: center;
+  gap: 50px;
+}
+.shef .our-centers {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+.shef .our-centers h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  color: #282938;
+}
+.shef .our-centers p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #282938;
+}
+.shef .kards-row {
+  gap: 30px;
+}
+.shef .kards-row #ferst {
+  background: #f4f6fc;
+  border-radius: 12px;
+  padding: 60px 0;
+}
+.shef .kards-row #second {
+  background: #1c1e53;
+  border-radius: 12px;
+  padding: 60px 0;
+  color: white;
+}
+.shef .kards-row #second .narx h2 {
+  color: white;
+}
+.shef .kards-row #second .narx a {
+  color: #fcd980;
+}
+.shef .kards-row #second .btn {
+  background: #fcd980;
+  color: black;
+}
+.shef .kards-row #second .btn:hover {
+  color: #f4f6fc;
+  background-color: #1c1e53;
+}
+.shef .kards-row #third {
+  background: #f4f6fc;
+  border-radius: 12px;
+  padding: 60px 0;
+}
+.shef .kards-row .kards {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.shef .kards-row .kards {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  gap: 15px;
+  width: 400px;
+  transition: 0.5s;
+}
+.shef .kards-row .kards .narx {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: start;
+  gap: 10px;
+  align-items: center;
+}
+.shef .kards-row .kards .narx h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 56px;
+  color: #282938;
+}
+.shef .kards-row .kards .narx h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #282938;
+}
+.shef .kards-row .kards .narx p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #282938;
+}
+.shef .kards-row .kards .all-limit {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: start;
+  gap: 15px;
+}
+.shef .kards-row .kards .button {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+}
+.shef .kards-row .kards .button .btn {
+  padding: 10px 60px;
+  border: 1px solid;
+  border-radius: 25px;
+  background-color: #282938;
+  color: white;
+  transition: 0.5s;
+}
+.shef .kards-row .kards .button .btn:hover {
+  color: rgb(34, 32, 32);
+  background-color: #fcd980;
+}
+
+@media (max-width: 1310px) {
+  .kards-row {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    margin: 0 20px;
+    gap: 20px;
+  }
+}
+#readcase .Design_case {
+  max-width: 1050px !important;
+  padding: 0 12px !important;
+  margin: 0 auto;
+}
+#readcase .Design_case .Design_case_title_sub {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #282938;
+  opacity: 0.8;
+  padding-top: 120px;
+}
+#readcase .Design_case .Design_case_title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  color: #282938;
   padding-top: 12px;
   max-width: 646px;
 }
@@ -1186,7 +1334,6 @@ html {
     width: 100%;
   }
 }
->>>>>>> 2aed413b79e2ef040e2c970fd6e05945e4b47580
 main {
   background: #E5E5E5;
 }
@@ -1323,5 +1470,3 @@ main {
     font-size: 20px !important;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
