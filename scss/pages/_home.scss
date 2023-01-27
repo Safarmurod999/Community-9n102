@@ -3,6 +3,7 @@
 
 .home {
   background-color: var.$tint-blue !important;
+  padding: 50px 0 !important;
   &__title {
     font-style: normal;
     font-weight: 600;
@@ -21,7 +22,7 @@
     opacity: 0.7;
     margin-bottom: 48px;
   }
-  &__btn__group{
+  &__btn__group {
     max-width: 490px;
     align-items: center;
     justify-content: center;
@@ -29,8 +30,7 @@
     margin: 0 auto !important;
     // gap: 20px;
   }
-  &__btn{
-    
+  &__btn {
     padding: 16px 56px;
     font-style: normal;
     font-weight: 600;
@@ -38,16 +38,189 @@
     line-height: 32px;
     border-radius: 41px;
     color: var.$secondary-color !important;
-    transition: .5s;
+    transition: 0.5s;
   }
   &__btn:hover {
     color: #1b1c2b !important;
     background-color: var.$yellow;
   }
 }
-
-@media (min-width:992px){
-    .home{
-        padding: 126px 0 !important;
+.work {
+  padding: 50px 0 !important;
+  background-color: var.$grey !important;
+  &__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 64px;
+    color: var.$dark-blue !important;
+    margin-bottom: 16px;
+  }
+  &__text {
+    max-width: 405px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: var.$dark-blue !important;
+    opacity: 0.7;
+    margin-bottom: 16px;
+  }
+  &__btn {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    color: var.$royal-blue !important;
+  }
+  &__card {
+    .card__title {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 48px;
+      color: var.$dark-blue !important;
+      margin: 16px 0 8px 0;
     }
+    .card__text {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      color: var.$dark-blue !important;
+      opacity: 0.7;
+    }
+  }
+}
+
+.projects {
+  padding: 50px 0;
+  &__title {
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 64px;
+    color: var.$dark-blue !important;
+    // white-space: nowrap;
+  }
+  &__btn {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: var.$dark-blue !important;
+    white-space: nowrap;
+  }
+  &__top {
+    margin-bottom: 64px;
+  }
+  &__left{
+    position: relative !important;
+    overflow: hidden;
+    &:hover{
+       .overlay-left{
+        transform: translateX(0);
+       }
+    }   
+  }
+  &__right{
+    &__card{
+      position: relative;
+      overflow: hidden;
+      &:hover{
+        .overlay-right{
+         transform: translateX(0);
+        }
+     }   
+    }
+  }
+  .overlay-left {
+    padding: 50px 35px 76px 48px;
+    top: 0;
+    transform: translate(-500px);
+    position: absolute;
+    max-width: 396px;
+    height: 100%;
+    background: linear-gradient(329.39deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
+    transition: .5s;
+    &__title {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 36px;
+      color: var.$secondary-color;
+      margin-bottom: 16px;
+    }
+    &__text {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 28px;
+      color: var.$secondary-color;
+      opacity: 0.8;
+      margin-bottom: 40px;
+    }
+    &__btn {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 28px;
+      color: var.$yellow;
+      img {
+        width: auto !important;
+      }
+    }
+  }
+  .overlay-right {
+    padding: 50px 96px 45px 56px;
+    top: 0;
+    transform: translate(-800px);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(329.39deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
+    transition: .5s;
+    @include mixin.flex-box(column,end,start);
+    &__title {
+      max-width: 313px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 36px;
+      color: var.$secondary-color;
+      margin-bottom: 10px;
+    }
+    &__btn {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 28px;
+      color: var.$yellow;
+      img {
+        width: auto !important;
+      }
+    }
+  }
+  .row {
+    img {
+      width: 100%;
+    }
+  }
+}
+@media (min-widh:768px){
+  .projects{
+    &__right{
+      .overlay-right{
+        width: 94.44%;
+      }
+    }
+  }
+}
+@media (min-width: 992px) {
+  .home,
+  .work {
+    padding: 126px 0 !important;
+  }
+  
 }
