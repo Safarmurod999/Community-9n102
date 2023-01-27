@@ -1,11 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
-  font-family: "Poppins", sans-serif !important;
-}
+/* Error: expected "{".
+ *     ,
+ * 185 | >>>>>>> 6ab5f534e5e9f9e87931a7cdaa3f781c9894400b
+ *     |                                                 ^
+ *     '
+ *   scss\pages\_pricing.scss 185:49  @use
+ *   scss\style.scss 10:1             root stylesheet */
 
 html {
   scroll-behavior: smooth;
