@@ -1,0 +1,118 @@
+// Ahmadjonov Muhammadmin
+
+#sec-1 {
+  background: #f4f6fc;
+  padding: 96px 0;
+
+  p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    /* or 175% */
+
+    text-align: center;
+
+    /* Dark blue */
+
+    color: #282938;
+
+    opacity: 0.7;
+    padding-bottom: 4px;
+  }
+
+  h1 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 64px;
+    /* identical to box height, or 133% */
+
+    text-align: center;
+
+    /* Dark blue */
+
+    color: #282938;
+  }
+
+  .p-1 {
+    padding: 24px 0 32px;
+  }
+
+  .img {
+    text-align: center;
+  }
+}
+
+#sec-2 {
+  background-color: #fff;
+  padding: 96px 0;
+
+  .b {
+    text-align: center;
+    padding-bottom: 48px !important;
+    a {
+      padding-right: 32px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 32px;
+      /* identical to box height, or 178% */
+
+      /* Dark blue */
+
+      color: #282938;
+
+      opacity: 0.7;
+    }
+
+    a:hover {
+      transition: 0.3s;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 32px;
+      /* identical to box height, or 178% */
+
+      /* Royal Blue */
+
+      color: #2405f2;
+      opacity: 1;
+    }
+  }
+}
+
+.grid-100 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 34px;
+  grid-row-gap: 64px;
+}
+
+.card {
+  border: none;
+  h1 {
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 56px;
+    /* identical to box height, or 147% */
+
+    /* Dark blue */
+
+    color: #282938;
+    padding: 24px 0 12px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    /* or 175% */
+
+    text-align: justify;
+
+    /* Dark blue */
+
+    color: #282938;
+
+    opacity: 0.7;
+    max-width: 623px;
+  }
+}

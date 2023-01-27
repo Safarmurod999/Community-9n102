@@ -1,7 +1,7 @@
-<<<<<<< HEAD
 .head {
   background-color: #fff;
-  margin-top: 128px;
+  // margin-top: 128px;
+  // margin-bottom: 128px;
 }
 .asked-head {
   padding-right: 20px;
@@ -181,5 +181,15 @@
     gap: 20px;
   }
 }
-=======
->>>>>>> 6ab5f534e5e9f9e87931a7cdaa3f781c9894400b
+
+
+@media (max-width: 1000px) {
+  .wor {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    gap: 30px;
+    margin-left: 110px;
+  }
+}
+
