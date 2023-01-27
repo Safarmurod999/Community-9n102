@@ -110,6 +110,97 @@ main {
   opacity: 1 !important;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#footer {
+  background: #1C1E53;
+  color: white;
+}
+
+.footers {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 50px;
+  padding-top: 100px;
+}
+.footers .footers-lift {
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 20px;
+}
+.footers .footers-lift .fit h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 58px;
+  line-height: 64px;
+  color: #282938;
+  padding-bottom: 30px;
+}
+.footers .footers-lift .pargrp p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+.footers .img-left {
+  padding-top: 90px;
+}
+.footers .img-left img {
+  width: 100%;
+}
+
+.bottom {
+  padding: 30px 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+}
+.bottom h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #282938;
+}
+.bottom ul {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 20px;
+}
+.bottom ul li a {
+  color: black;
+}
+.bottom ul li a:hover {
+  text-decoration: underline;
+}
+
+.bottom-end {
+  padding: 30px 0;
+  height: 95px;
+}
+
+@media (max-width: 1380px) {
+  .bottom-end {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .footers {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 40px;
+  }
+}
 .home {
   background-color: #1C1E53 !important;
 }
@@ -663,6 +754,159 @@ main {
 @media (max-width: 375px) {
   .our-design .our-design-left h1 {
     font-size: 26px !important;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  font-family: sans-serif;
+  background-color: white;
+}
+
+.container {
+  box-sizing: border-box;
+}
+
+.shef {
+  display: grid;
+  grid-template-columns: auto;
+  align-items: center;
+  gap: 50px;
+}
+.shef .our-centers {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+.shef .our-centers h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  color: #282938;
+}
+.shef .our-centers p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #282938;
+}
+.shef .kards-row {
+  gap: 30px;
+}
+.shef .kards-row #ferst {
+  background: #F4F6FC;
+  border-radius: 12px;
+  padding: 60px 0;
+}
+.shef .kards-row #second {
+  background: #1C1E53;
+  border-radius: 12px;
+  padding: 60px 0;
+  color: white;
+}
+.shef .kards-row #second .narx h2 {
+  color: white;
+}
+.shef .kards-row #second .narx a {
+  color: #FCD980;
+}
+.shef .kards-row #second .btn {
+  background: #FCD980;
+  color: black;
+}
+.shef .kards-row #second .btn:hover {
+  color: #F4F6FC;
+  background-color: #1C1E53;
+}
+.shef .kards-row #third {
+  background: #F4F6FC;
+  border-radius: 12px;
+  padding: 60px 0;
+}
+.shef .kards-row .kards {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.shef .kards-row .kards {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  gap: 15px;
+  width: 400px;
+  transition: 0.5s;
+}
+.shef .kards-row .kards .narx {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: start;
+  gap: 10px;
+  align-items: center;
+}
+.shef .kards-row .kards .narx h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 56px;
+  color: #282938;
+}
+.shef .kards-row .kards .narx h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #282938;
+}
+.shef .kards-row .kards .narx p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #282938;
+}
+.shef .kards-row .kards .all-limit {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: start;
+  gap: 15px;
+}
+.shef .kards-row .kards .button {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+}
+.shef .kards-row .kards .button .btn {
+  padding: 10px 60px;
+  border: 1px solid;
+  border-radius: 25px;
+  background-color: #282938;
+  color: white;
+  transition: 0.5s;
+}
+.shef .kards-row .kards .button .btn:hover {
+  color: rgb(34, 32, 32);
+  background-color: #FCD980;
+}
+
+@media (max-width: 1310px) {
+  .kards-row {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    margin: 0 20px;
+    gap: 20px;
   }
 }
 * {
