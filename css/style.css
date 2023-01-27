@@ -110,6 +110,45 @@ main {
   opacity: 1 !important;
 }
 
+.head {
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.asked-head {
+  padding-right: 20px;
+}
+
+.asked {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 56px;
+  color: #282938;
+}
+
+.for {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  color: #2405F2;
+  opacity: 0.87;
+  padding-top: 16px;
+}
+
+.reqam {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #2405F2;
+  padding-right: 54px;
+  margin: auto 0;
+}
+
 .home {
   background-color: #1C1E53 !important;
   padding: 50px 0 !important;
@@ -156,7 +195,7 @@ main {
 
 .work {
   padding: 50px 0 !important;
-  background-color: #F4F6FC !important;
+  background-color: rgb(244, 246, 252) !important;
 }
 .work__title {
   font-style: normal;
@@ -243,7 +282,7 @@ main {
   position: absolute;
   max-width: 396px;
   height: 100%;
-  background: linear-gradient(329.39deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
+  background: linear-gradient(329.39deg, #1c1e53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
   transition: 0.5s;
 }
 .projects .overlay-left__title {
@@ -280,7 +319,7 @@ main {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: linear-gradient(329.39deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
+  background: linear-gradient(329.39deg, #1c1e53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
   transition: 0.5s;
   display: flex;
   flex-direction: column;
@@ -310,6 +349,201 @@ main {
   width: 100%;
 }
 
+.features {
+  padding: 50px 0;
+  background-color: rgb(244, 246, 252);
+}
+.features__name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: #282938;
+  margin-bottom: 12px;
+}
+.features__title {
+  max-width: 630px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  color: #282938;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+.features__card {
+  padding: 53px 33px 48px 48px;
+  background-color: #fff;
+  margin-top: 32px;
+}
+.features__card img {
+  width: 35px;
+  height: 35px;
+}
+.features__card h3 {
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #282938;
+  margin-top: 23px;
+  margin-bottom: 12px;
+}
+.features__card p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #282938;
+  opacity: 0.7;
+}
+
+.clients {
+  padding: 50px 0;
+  background-color: rgba(244, 246, 252, 0.5);
+}
+.clients__left h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 56px;
+  color: #282938;
+}
+.clients__left p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #282938;
+  opacity: 0.7;
+  margin-top: 16px;
+}
+.clients__right h4 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  color: #282938;
+  margin-bottom: 48px;
+}
+.clients__right .img-box {
+  height: 60px;
+}
+.clients__right .img-box img {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.clients__right .img-box h4 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #282938;
+}
+.clients__right .img-box p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  color: #282938;
+}
+.clients .carousel-control-next,
+.clients .carousel-control-prev {
+  width: 48px !important;
+  height: 48px !important;
+  border-radius: 50%;
+  opacity: 1 !important;
+  background-color: #2405F2 !important;
+  top: auto !important;
+  bottom: 0 !important;
+}
+.clients .carousel-control-next {
+  right: 20px !important;
+}
+.clients .carousel-control-prev {
+  left: auto !important;
+  right: 90px !important;
+}
+
+.inquiry__left {
+  padding: 50px 12px;
+  background-image: url("../../images/home/inquiry.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.inquiry__right {
+  padding: 50px 12px;
+  background-color: #1C1E53 !important;
+}
+.inquiry__btn {
+  margin-top: 23px;
+  margin-bottom: 28px;
+  text-align: center;
+  padding: 16px 100px;
+  display: inline-block;
+  width: 100%;
+  background-color: #FCD980;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: #1C1E53 !important;
+  border-radius: 41px;
+}
+.inquiry__link {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: #fff;
+}
+.inquiry__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 74px;
+  color: #fff;
+  margin-bottom: 24px;
+}
+.inquiry__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #fff;
+}
+.inquiry input {
+  padding: 18px 32px;
+  background-color: transparent !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.05);
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+.inquiry input::placeholder {
+  color: #fff;
+}
+.inquiry h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.inquiry p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #fff;
+}
+
 @media (min-widh: 768px) {
   .projects__right .overlay-right {
     width: 94.44%;
@@ -317,8 +551,18 @@ main {
 }
 @media (min-width: 992px) {
   .home,
-  .work {
+  .work,
+  .features,
+  .clients,
+  .head {
     padding: 126px 0 !important;
+  }
+  .accordion-body {
+    padding-left: 100px !important;
+  }
+  .inquiry__left, .inquiry__right {
+    padding: 96px;
+    padding-bottom: 48px;
   }
 }
 #our-design {
@@ -1070,7 +1314,7 @@ html {
   font-size: 16px;
   line-height: 28px;
   text-align: center;
-  color: #2405F2;
+  color: #2405f2;
   transition: 0.5s;
 }
 .xua a:hover {
@@ -1124,8 +1368,6 @@ html {
   padding: 40px 0;
   display: grid;
   grid-template-columns: auto;
-  justify-content: center;
-  text-align: center;
 }
 
 @media (max-width: 1260px) {

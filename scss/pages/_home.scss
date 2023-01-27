@@ -1,6 +1,6 @@
 @use "../abstract/mixins" as mixin;
 @use "../abstract/variables" as var;
-
+@use "../components/accordeon";
 .home {
   background-color: var.$tint-blue !important;
   padding: 50px 0 !important;
@@ -115,24 +115,24 @@
   &__top {
     margin-bottom: 64px;
   }
-  &__left{
+  &__left {
     position: relative !important;
     overflow: hidden;
-    &:hover{
-       .overlay-left{
+    &:hover {
+      .overlay-left {
         transform: translateX(0);
-       }
-    }   
+      }
+    }
   }
-  &__right{
-    &__card{
+  &__right {
+    &__card {
       position: relative;
       overflow: hidden;
-      &:hover{
-        .overlay-right{
-         transform: translateX(0);
+      &:hover {
+        .overlay-right {
+          transform: translateX(0);
         }
-     }   
+      }
     }
   }
   .overlay-left {
@@ -142,8 +142,12 @@
     position: absolute;
     max-width: 396px;
     height: 100%;
-    background: linear-gradient(329.39deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
-    transition: .5s;
+    background: linear-gradient(
+      329.39deg,
+      #1c1e53 -10.96%,
+      rgba(28, 30, 83, 0.42) 103.96%
+    );
+    transition: 0.5s;
     &__title {
       font-style: normal;
       font-weight: 600;
@@ -179,9 +183,13 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(329.39deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
-    transition: .5s;
-    @include mixin.flex-box(column,end,start);
+    background: linear-gradient(
+      329.39deg,
+      #1c1e53 -10.96%,
+      rgba(28, 30, 83, 0.42) 103.96%
+    );
+    transition: 0.5s;
+    @include mixin.flex-box(column, end, start);
     &__title {
       max-width: 313px;
       font-style: normal;
@@ -208,10 +216,209 @@
     }
   }
 }
-@media (min-widh:768px){
-  .projects{
-    &__right{
-      .overlay-right{
+
+.features {
+  padding: 50px 0;
+  background-color: var.$grey;
+  &__name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: var.$dark-blue;
+    margin-bottom: 12px;
+  }
+  &__title {
+    max-width: 630px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    color: var.$dark-blue;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  &__card {
+    padding: 53px 33px 48px 48px;
+    background-color: var.$secondary-color;
+    margin-top: 32px;
+    img {
+      width: 35px;
+      height: 35px;
+    }
+    h3 {
+      white-space: nowrap;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 36px;
+      color: var.$dark-blue;
+      margin-top: 23px;
+      margin-bottom: 12px;
+    }
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      color: var.$dark-blue;
+      opacity: 0.7;
+    }
+  }
+}
+.clients {
+  padding: 50px 0;
+  background-color: rgba(244, 246, 252, 0.5);
+  &__left {
+    h3 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 38px;
+      line-height: 56px;
+      color: var.$dark-blue;
+    }
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      color: var.$dark-blue;
+      opacity: 0.7;
+      margin-top: 16px;
+    }
+  }
+  &__right {
+    h4 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 48px;
+      color: var.$dark-blue;
+      margin-bottom: 48px;
+    }
+    .img-box {
+      height: 60px;
+      img {
+        margin-top: 10px;
+        margin-right: 10px;
+      }
+      h4 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        color: var.$dark-blue;
+      }
+      p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 12px;
+        color: var.$dark-blue;
+      }
+    }
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    width: 48px !important;
+    height: 48px !important;
+    border-radius: 50%;
+    opacity: 1 !important;
+    background-color: var.$royal-blue !important;
+    top: auto !important;
+    bottom: 0 !important;
+  }
+  .carousel-control-next {
+    right: 20px !important;
+  }
+  .carousel-control-prev {
+    left: auto !important;
+    right: 90px !important;
+  }
+}
+.inquiry {
+  &__left {
+    padding: 50px 12px;
+    background-image: url("../../images/home/inquiry.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  &__right {
+    padding: 50px 12px;
+    background-color: var.$primary-color !important;
+  }
+  &__btn {
+    margin-top: 23px;
+    margin-bottom: 28px;
+    text-align: center;
+    padding: 16px 100px;
+    display: inline-block;
+    width: 100%;
+    background-color: var.$yellow;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    color: var.$primary-color !important;
+    border-radius: 41px;
+  }
+  &__link {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    color: var.$secondary-color;
+  }
+  &__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 74px;
+    color: var.$secondary-color;
+    margin-bottom: 24px;
+  }
+  &__text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: var.$secondary-color;
+  }
+  input {
+    padding: 18px 32px;
+    background-color: transparent !important;
+    border: 1.5px solid rgba(255, 255, 255, 0.05);
+    margin-bottom: 16px;
+    border-radius: 8px;
+    &::placeholder {
+      color: var.$secondary-color;
+    }
+  }
+  h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    color: var.$secondary-color;
+    margin-bottom: 16px;
+  }
+  p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: var.$secondary-color;
+  }
+}
+@media (min-widh: 768px) {
+  .projects {
+    &__right {
+      .overlay-right {
         width: 94.44%;
       }
     }
@@ -219,8 +426,19 @@
 }
 @media (min-width: 992px) {
   .home,
-  .work {
+  .work,
+  .features,
+  .clients,
+  .head {
     padding: 126px 0 !important;
   }
-  
+  .accordion-body {
+    padding-left: 100px !important;
+  }
+  .inquiry{
+    &__left,&__right{
+      padding:96px;
+      padding-bottom: 48px;
+    }
+  }
 }
